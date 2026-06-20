@@ -13,9 +13,6 @@ class Solution {
             return 1;
             }
         }
-        if(nums[0]>0 && nums[0]!=1){
-            return 1;
-        }
         List<Integer> L1=new ArrayList<>();
         HashSet<Integer> s1=new HashSet<>();
         for(int i=0;i<nums.length;i++){
