@@ -1,18 +1,6 @@
 class Solution {
     public int firstMissingPositive(int[] nums) {
         Arrays.sort(nums);
-         if(nums.length==1){
-            if(nums[0]>=0){
-                if(nums[0]==0 || nums[0]==1){
-                    return nums[0]+1;
-                }else{
-                    return 1;
-                }
-                
-            }else{
-            return 1;
-            }
-        }
         List<Integer> L1=new ArrayList<>();
         HashSet<Integer> s1=new HashSet<>();
         for(int i=0;i<nums.length;i++){
@@ -29,10 +17,10 @@ class Solution {
           if(arr[0]>0 && arr[0]!=1){
             return 1;
         }
+                
+    
         
-       
-
-        int i;
+       int i;
         for( i=1;i<arr.length;i++){
              if(arr[i]!=arr[i-1]+1){
                 return arr[i-1]+1;
