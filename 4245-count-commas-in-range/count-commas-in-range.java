@@ -7,10 +7,7 @@ class Solution {
         }
         else if(n>=1000)
         {
-            for(int i=1000;i<=n;i++)
-                {
-                    k++;
-                }
+            k=(n-1000)+1;
             
         }
         return k;
